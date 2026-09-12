@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Un detalle para ti 💜</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card-container">
+    <div class="card">
+      <div class="kuromi-header">
+        <!-- Usa la imagen local para que nunca falle -->
+        <img src="kuromi.jpeg" alt="Kuromi" class="kuromi-img">
+      </div>
+      
+      <h2>Un pequeño detalle para ti ✨</h2>
+      <p class="subtitle">Sé que hoy tuviste un día pesado... presiona el botón 🌷</p>
+
+      <button id="openBtn" onclick="abrirCarta()">Para consentirte un poquito 💜</button>
+
+      <div id="message" class="message hidden">
+        <p class="letter-text">
+          Sé que hoy el día estuvo bastante cansón en el trabajo, entre tanto conteo, inventario y jefes fastidiosos... 😮‍💨<br><br>
+          Solo quería sacarte una sonrisa, decirte que lo hiciste excelente hoy y recordarte lo especial que eres. ¡Ya estás en casa a descansar! 🌷✨
+        </p>
+        <div class="tulips-container">
+          <span class="tulip">🌷</span>
+          <span class="tulip">🌷</span>
+          <span class="tulip">🌷</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

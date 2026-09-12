@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1e152a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card-container {
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+}
+
+.card {
+  background: #fbf5ff;
+  border: 3px solid #b185db;
+  border-radius: 24px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(177, 133, 219, 0.3);
+}
+
+.kuromi-img {
+  width: 140px;
+  height: auto;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 5px 10px rgba(0,0,0,0.15));
+}
+
+h2 {
+  color: #6a0dad;
+  font-size: 1.3rem;
+  margin: 10px 0 5px 0;
+}
+
+.subtitle {
+  color: #7a6889;
+  font-size: 0.88rem;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #9d4edd;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  font-size: 0.95rem;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(157, 78, 221, 0.4);
+  transition: transform 0.2s, background-color 0.2s;
+  font-weight: 600;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #7b2cbf;
+}
+
+.message {
+  margin-top: 15px;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: all 0.6s ease;
+}
+
+.message.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.letter-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #3d1e37;
+  background: #f1e4ff;
+  padding: 16px;
+  border-radius: 14px;
+  border-left: 4px solid #9d4edd;
+  text-align: left;
+}
+
+.tulips-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 2.2rem;
+  margin-top: 15px;
+}
+
+.tulip {
+  animation: float 1.8s infinite alternate ease-in-out;
+}
+
+.tulip:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.tulip:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+@keyframes float {
+  from { transform: translateY(0); }
+  to { transform: translateY(-8px); }
+}
+
+.hidden {
+  display: none;
+}
